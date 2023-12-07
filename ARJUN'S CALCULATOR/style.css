@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-image: url("https://cdn.pixabay.com/animation/2023/06/13/21/51/21-51-13-541_512.gif");
+     background-size: cover;
+     height: 100vh;
+     width: 100vw;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    height: 12vh;
+    font-size: 7vh;
+    width: 100vw;
+    color: rgb(0, 255, 0);
+    margin-bottom: 10vh;
+}
+.input input[type=text]{
+    height: 5vh;
+    width: 60vw;
+    margin-bottom: 5vh;
+    border: solid black;
+    border-radius: 5px;
+    font-size: 4vh;
+    /* background: linear-gradient(to right, #02243a 30%, #dd3333 70%);
+     */
+     background-color: inherit;
+    color: rgb(233, 243, 243);
+    /* color: rgb(72, 21, 3); */
+    border: solid rgb(64, 0, 255);
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 30vw;
+}
+.button{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+.butt{
+    height: 6vh;
+    width: 5vw;
+    margin: 2vh 0;
+    font-size: 3vh;
+    /* background: linear-gradient(to right, #db6034 80%, #2cb322 20%); */
+    background-color: inherit;
+    color: rgb(72, 21, 3);
+    border: solid red;
+
+}
+.butt:hover{
+    background-color: chartreuse;
+    color: darkorange;
+}
+@media screen and (max-width:900px){
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        height: 8vh;
+        font-size: 4vh;
+        width: 100vw;
+        color: aqua;
+        margin-bottom:8vh;
+    }
+    .input input[type=text]{
+        height: 5vh;
+        width: 70vw;
+        margin-bottom: 5vh;
+        border: solid black;
+    
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 50vw;
+    }
+    .button{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+    }
+    .butt{
+        height: 6vh;
+        width: 10vw;
+        margin: 2vh 0;
+    }
+}
